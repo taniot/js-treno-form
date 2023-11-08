@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcolo biglietto treno</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="modulo-genera-biglietto">
+      <label for="utente">Nome Cognome</label>
+      <input type="text" id="utente" />
+
+      <label for="km">Km da percorrere</label>
+      <input type="number" id="km" />
+
+      <!-- <input type="number" id="eta" class="eta-utente" /> -->
+      <label for="eta">La tua età</label>
+      <select name="" id="eta" class="eta-utente">
+        <option value="minorenne">Minorenne</option>
+        <option value="maggiorenne">Maggiorenne</option>
+        <option value="over">Over 65</option>
+      </select>
+
+      <button id="genera">Genera</button>
+      <button id="annulla">Annulla</button>
+    </div>
+
+    <div id="biglietto-virtuale" class="hidden">
+      <h2>Nome utente</h2>
+      <p id="nome-utente"></p>
+
+      <h2>Tariffa</h2>
+      <p id="tariffa-biglietto"></p>
+
+      <h2>Carrozza</h2>
+      <p id="carrozza-biglietto">5</p>
+
+      <h2>Codice CP</h2>
+      <p id="cp-biglietto">12345</p>
+
+      <h2>Prezzo Biglietto</h2>
+      <p id="prezzo-biglietto"></p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
